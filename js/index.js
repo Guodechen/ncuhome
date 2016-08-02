@@ -331,15 +331,14 @@ function upper() {
 
     setTimeout(function() {
         upper.classList.remove('upper')
-    }, 500)
+    }, 1000)
     setTimeout(function() {
         upper1.classList.add('upper1')
-    }, 700)
+    }, 1200)
     setTimeout(function() {
         upper2.classList.remove('upper2')
-    }, 900)
+    }, 1400)
 }
-upper()
 
 
 var mouseClick = document.getElementById('clickMouse')

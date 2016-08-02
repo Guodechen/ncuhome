@@ -1,4 +1,7 @@
-window.onload = eventWindowLoaded;
+window.onload = function() {
+    upper
+    eventWindowLoaded
+}
 var Debugger = function(){};
 Debugger.log = function(message)  {
     try {
