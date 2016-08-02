@@ -319,6 +319,11 @@ var mouseClick = document.getElementById('clickMouse')
 mouseClick.onclick = function() {
     scrollWheel("down")
     setTimeout(waiting, opts.timer)
+    if (opts.load == 1) {
+        setTimeout(clickChange, 1000)
+    } else if (opts.load != 1) {
+        stop()
+    }
 }
 if (document.addEventListener) {
     document.addEventListener('DOMMouseScroll', scrollFun, false)
