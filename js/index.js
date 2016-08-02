@@ -342,6 +342,19 @@ mouseClick.onclick = function() {
     } else if (opts.load != 1) {
         stop()
     }
+    canvasApp03();
+    canvasApp02('简介', 'li2', 'licanvas02', 'container transition translate1');
+    canvasApp01('首页', 'li1', 'licanvas01');
+    canvasApp01('简介', 'li2', 'licanvas02');
+    canvasApp01('部门风采', 'li3', 'licanvas03');
+    canvasApp01('产品介绍', 'li4', 'licanvas04');
+    canvasApp01('15周年庆', 'li5', 'licanvas05');
+    canvasApp01('联系/加入', 'li6', 'licanvas06');
+    canvasApp02Clear('li1', 'licanvas01')
+    canvasApp02Clear('li3', 'licanvas03')
+    canvasApp02Clear('li4', 'licanvas04')
+    canvasApp02Clear('li5', 'licanvas05')
+    canvasApp02Clear('li6', 'licanvas06')
 }
 if (document.addEventListener) {
     document.addEventListener('DOMMouseScroll', scrollFun, false)
