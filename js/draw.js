@@ -1,6 +1,6 @@
 window.onload = function() {
-    upper
-    eventWindowLoaded
+    upper()
+    eventWindowLoaded()
 }
 var Debugger = function(){};
 Debugger.log = function(message)  {
