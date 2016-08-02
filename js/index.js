@@ -383,12 +383,12 @@ document.onkeydown = function(e) {
         stop()
     }
     var head = document.getElementById('head')
-    if (head.getAttribute('class') === "container transition translate0"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate0"&&　(e.keyCode == 38 || e.keyCode == 40)) {
         canvasApp02('首页', 'li1', 'licanvas01', 'container transition translate0');
         canvasApp02Clear('li2', 'licanvas02')
         canvasApp01('简介', 'li2', 'licanvas02');
     }
-    if (head.getAttribute('class') === "container transition translate1"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate1"&&　(e.keyCode == 38 || e.keyCode == 40)) {
         canvasApp03();
         canvasApp02('简介', 'li2', 'licanvas02', 'container transition translate1');
         canvasApp01('首页', 'li1', 'licanvas01');
@@ -396,7 +396,7 @@ document.onkeydown = function(e) {
         canvasApp02Clear('li1', 'licanvas01')
         canvasApp02Clear('li3', 'licanvas03')
     }
-    if (head.getAttribute('class') === "container transition translate2"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate2"&&(e.keyCode == 38 || e.keyCode == 40)) {
         canvasApp04();
         canvasApp02('部门风采', 'li3', 'licanvas03', 'container transition translate2');
         canvasApp01('简介', 'li2', 'licanvas02');
@@ -404,7 +404,7 @@ document.onkeydown = function(e) {
         canvasApp02Clear('li2', 'licanvas02')
         canvasApp02Clear('li4', 'licanvas04')
     }
-    if (head.getAttribute('class') === "container transition translate3"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate3"&&(e.keyCode == 38 || e.keyCode == 40)) {
         canvasApp06();
         canvasApp07('productsCanvas05','bottomNavLine3')
         canvasApp02('产品介绍', 'li4', 'licanvas04', 'container transition translate3');
@@ -414,7 +414,7 @@ document.onkeydown = function(e) {
         canvasApp02Clear('li3', 'licanvas03')
         canvasApp02Clear('li5', 'licanvas05')
     }
-    if (head.getAttribute('class') === "container transition translate4"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate4"&&(e.keyCode == 38 || e.keyCode == 40)) {
         // setTimeout('canvasApp10()', 1200 )
         canvasApp10()
         canvasApp10Clear();
@@ -426,7 +426,7 @@ document.onkeydown = function(e) {
         canvasApp02Clear('li4', 'licanvas04')
         canvasApp02Clear('li6', 'licanvas06')
     }
-    if (head.getAttribute('class') === "container transition translate5"&&(e.keyCode == 38 && opts.through||opts.through && e.keyCode == 40)) {
+    if (head.getAttribute('class') === "container transition translate5"&&(e.keyCode == 38 || e.keyCode == 40)) {
         canvasApp02('联系/加入', 'li6', 'licanvas06', 'container transition translate5');
         canvasApp01('产品介绍', 'li5', 'licanvas05');
         // console.log("a")
