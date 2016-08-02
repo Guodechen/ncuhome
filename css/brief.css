@@ -1,0 +1,180 @@
+.containBox {
+    width: 1250px;
+    height: 610px;
+    margin: 0 auto;
+}
+
+#leftBox {
+    width: 650px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#rightBox {
+    width: 600px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#rightBox div {
+    transform-style: preserve-3d;
+}
+
+#leftBox div {
+    width: 408px;
+    height: 238px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#leftBox img {
+    display: block;
+    position: absolute;
+    transition: all 0.6s;
+}
+
+#leftBox .downImage {
+    display: block;
+    margin-top: 238px;
+    position: absolute;
+    transform: rotateX(180deg);
+}
+
+#leftBox div:nth-child(1) > div:nth-child(1) {
+    margin-left: 240px;
+}
+#leftBox div:nth-of-type(1) {
+    z-index: 1;
+}
+#leftBox div:nth-of-type(2) {
+    margin-top: 110px;
+    z-index: 2;
+    transition-delay: 0.3s;
+}
+#leftBox div:nth-of-type(3) {
+    margin-left: 165px;
+    margin-top: 310px;
+    z-index: 1;
+    transition-delay:0.6s;
+}
+#rightBox img {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.containBox .introduceBox {
+    margin-top: 260px;
+    height: 200px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 40px;
+    font-size: 21px;
+    transition: transform 0.5s;
+}
+
+.introduceBox .prevIntroduce,
+.introduceBox .afterIntroduce {
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.introduceBox .prevIntroduce {
+    position: absolute;
+}
+
+#rightBox .afterIntroduce {
+    position: absolute;
+    height: 200px;
+    margin-top: -200px;
+    transform: rotateX(180deg);
+    opacity: 0;
+}
+
+#rightBox span {
+    float: left;
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 270px;
+    cursor: pointer;
+    border: 1px solid #08c7fe;
+}
+
+#rightBox span:last-child {
+    margin-left: 0px;
+}
+#lefiBox div {
+    margin-left: 0;
+}
+#leftBox div > img,
+#leftBox span > img {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+#leftBox span > img {
+    opacity: 0;
+}
+#leftBox div > img:hover,
+#leftBox span > img:hover {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+#leftBox .noBlur {
+  -webkit-filter: blur(0px);
+	filter: blur(0px);
+}
+
+#leftBox .largen {
+  transform: scale(1.05);
+  transform-origin: 0% 0%;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+.afterClick {
+  background: #08c7fe;
+}
+.rotate180 {
+  transform: rotateX(180deg);
+}
+.rotate180 .fisrt span > img:nth-child(1),
+.rotate360 .fisrt img:nth-child(1) {
+	box-shadow: 8px 5px 10px #b6b6b6;
+}
+.rotate360 .second img:nth-child(1),
+.rotate180 .second span > img:nth-child(1) {
+	box-shadow: -8px 5px 10px #b6b6b6;
+}
+.rotate360 .thead  img:nth-child(1),
+.rotate180 .thead span > img:nth-child(1) {
+	box-shadow: 8px 12px 10px #b6b6b6;
+}
+.rotate360 {
+  transform: rotateX(360deg);
+}
+#leftBox .disperse0 {
+	transform: translate(-125px, 130px);
+}
+#leftBox .disperse1 {
+	transform: translate(115px, 20px);
+}
+#leftBox .disperse2 {
+	transform: translate(-50px, -175px);
+}
+@media screen and (min-height: 735px) {
+    .containBox {
+        margin-top: 12%;
+    }
+}
+@media screen and (max-height: 734px) {
+    .containBox {
+    margin-top: 6%;
+    }
+}

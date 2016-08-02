@@ -1,0 +1,194 @@
+.background {
+	background: #f3f5f6;
+	position: relative;
+}
+.teamContain {
+	width: 970px;
+	height: 400px;
+	position: relative;
+	margin-top: 5%;
+	margin-left: 395px;
+	overflow: hidden;
+}
+.teamInfo {
+	width: 1366px;
+	height: 580px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 12%;
+}
+.team {
+	width: 2000px;
+	height: 300px;
+	margin-left: 10px;
+	margin-top: 50px;
+	position: absolute;
+	left: 0;
+	transition: transform 0.6s;
+}
+.teamContain .slide {
+	transform: translateX(-32.5%);
+}
+.teamBox {
+	width: 280px;
+	height: 300px;
+	float: left;
+	text-align: center;
+	color: #7b7c7b;
+	background: #f9f9fd;
+	border-radius: 3%;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 0 10px #e4e4e4;
+	transition: all 0.3s;
+}
+.teamBox:not(:last-child) {
+	margin-right: 45px;
+}
+.teamBox div {
+	transform-style: preserve-3d;
+}
+.teamBox:hover {
+	background: #ffffff;
+	box-shadow: 0 0 20px #d8d9d8;
+	color: #333333;
+}
+.changeBtnBox {
+	width: 73px;
+	height: 3px;
+	position: absolute;
+	margin-left: 845px;
+}
+.changeBtnBox span {
+	display: inline-block;
+	float: left;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 1px solid #08c7fe;
+	cursor: pointer;
+}
+.changeBtnBox span:not(:last-child) {
+	margin-right: 25px;
+}
+.changeBtnBox .clickAfter {
+	background: #08c7fe;
+} 
+.team .introduceTeam {
+	width: 250px;
+	height: 165px;
+	overflow: hidden;
+	position: absolute;
+	font-size: 16px;
+	margin: 40px 0px 0px 15px;
+}
+.team .teamBox span {
+	display: block;
+	width: 250px;
+	height: 1px;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 208px;
+	background: #7b7c7b;
+}
+.teamBox .teamName {
+	width: 250px;
+	height: 50px;
+	position: absolute;
+	font-size: 20px;
+	margin-top: 210px;
+	margin-left: 15px;
+	overflow: hidden;
+	transition: height 0.3s;
+}
+.teamBox .introduceTeam p {
+	line-height: 5px;
+}
+.teamBox .teamName p {
+	line-height: 40px;
+}
+.teamBox .introduceTeam div:nth-child(1) {
+	width: 250px;
+	height: 0px;
+	background: transparent;
+	transition: height 0.5s;
+}
+.teamBox .teamIntroduceNone {
+	height: 165px !important; 
+}
+.teamBox .teamNameNone {
+	height: 0;
+}
+/* .teamBox img {
+	margin: 0 auto 30px auto;
+	display: block;
+} */
+.teamBox a {
+	cursor: pointer;
+	display: block;
+	margin: 0 auto 30px auto;
+	background: url('../img/icon.png') no-repeat;
+}
+.teamBox .officeIcon { 
+	width: 38px;
+	height: 32px;
+	background-position: -121px -82px;
+}
+.teamBox .operationIcon {
+	width: 25px;
+	height: 32px;
+	background-position: -164px -82px;
+}
+.teamBox .designIcon {
+	width: 28px;
+	height: 38px;
+	background-position: -54px -120px;
+}
+.teamBox .develpmentIcon {
+	width: 33px;
+	height: 27px;
+	background-position: -97px -128px;
+}
+.teamBox .repareIcon {
+	width: 33px;
+	height: 32px;
+	background-position: -5px -123px;
+}
+.team .tabToMove0 {
+	transform: translate(-20px, -50px);
+	width: 970px;
+	height: 400px;
+}
+.team .tabToMove1 {
+  transform: translate(-335px,-50px);
+	width: 970px;
+	height: 400px;
+}
+.team .tabToMove2 {
+	transform: translate(-650px,-50px);
+	width: 970px;
+	height: 400px;
+}
+.teamContainChange {
+	background-color: #ffffff;
+	box-shadow: 0 0 20px #d1d2d1;
+}
+.teamContain .xImg {
+	position: absolute;
+	margin-left: 935px;
+	margin-top: 20px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	background: url('../img/icon.png');
+	background-position: -105px -6px; 
+	display: none;
+}
+.teamImage {
+	position: absolute;
+	margin-top: -585px;
+	margin-left: 185px;
+}
+.teamsImg {
+	margin: 0 auto;
+}

@@ -1,0 +1,248 @@
+.contact {
+	background: #f3f5fb;
+}
+.contact .title {
+	float:left;
+	width: 23%;
+	height: 82%;
+	margin-top: 11%;
+	margin-left: -;
+}
+.contact .title img {
+	width: 37%;
+	margin-left: 40%;
+	margin-top: 15%;
+}
+.contact .contactBox {
+	float: left;
+	width: 75%;
+	height: 82%;
+	position: relative;
+	margin-top: 10%;
+}
+.contactBox .containContact {
+	width: 82%;
+	height: 200%;
+	top: 0;
+	position: absolute;
+	float: left;
+	transition: transform 0.3s ease-out;
+}
+#joinCanvas01 {
+	margin-left: 10% !important;
+}
+.contactBox .knowMore {
+	width: 97%;
+	height: 40%;
+	border-radius: 5px;
+	background: #ffffff;
+	text-align: center;
+	margin: 20px 0 24% 20px;	
+	box-shadow: 0 0 20px #dddfe4;
+}
+.contactBox .join {
+	width: 80%;
+	height: 35%;
+	margin-left: 10%;
+	position: relative;
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow: 0 0 20px #dddfe4;
+}
+.contactBox .buttonSwitch {
+	width: 15px;
+	height: 70px;
+	float: left;
+	margin-left: 90%;
+	margin-top: 23%;
+}
+.buttonSwitch .switchBtn {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border: 1px solid #08c7fe;
+}
+.contactBox .flowUp {
+	transform: translateY(-55%);
+}
+.knowMore img {
+	width: 9%;
+	margin-top: 7%;
+}
+.knowMore p {
+	font-size: 20px;
+}
+.knowMore a {
+	width: 30%;
+	height: 10%;
+ 	border: 2px solid #08c7fe;
+ 	display: block;
+ 	margin-left: 35%;
+ 	font-size: 20px;
+ 	color: #08c7fe;
+ 	text-decoration: none;
+ 	margin-top: 3%;
+ 	line-height: 250%;
+}
+.knowMore .ncuhome {
+	font-size: 25px;
+	font-family: "Microsoft YaHei";
+	font-weight: 100;
+}
+.rightInput a {
+	font-size: 17px;
+	color: #9d9d9d;
+	text-decoration: none;
+	margin-left: 8%;
+	line-height: 2;
+} 
+.join ul:nth-of-type(1) {
+	width: 71%;
+	height: 40%;
+	margin: 0 auto;
+	margin-top: 8%;
+	list-style: none;
+	font-size: 20px;
+	margin-left: 17%;
+	position: absolute;
+}
+.join ul:nth-of-type(1) li {
+	line-height: 15%;
+	width: 100%;
+	height: 30%;
+}
+.join ul:nth-of-type(1) li > img {
+	float: left;
+	width: 4%;
+	margin-right: 7%;
+	margin-top: 2%;
+}
+.join ul:nth-of-type(1) li > p {
+	float: left;
+}
+.join ul:nth-of-type(1) li:nth-child(3) > p:nth-child(3) {
+	margin-left: 10.5%;
+}
+.join ul:nth-of-type(2) {
+	width: 71%;
+	height: 35%;
+	list-style: none;
+	margin: 0 auto;
+	margin-top: 35%;
+	margin-left: 5%;
+}
+.join ul:nth-of-type(2) li {
+	float: left;
+	margin-left: 15%;
+	width: 17%;
+	margin-top: 53%;
+	text-align: center;
+}
+.join .email {
+	width: 25px;
+	height: 18px;
+	display: block;
+	background: url('../img/icon.png') no-repeat;
+	background-position: -70px -6px;
+	float: left;
+	margin-right: 7%;
+	margin-top: 2%;
+}
+.join .tell {
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url('../img/icon.png') no-repeat;
+	background-position: -4px -4px;
+	float: left;
+	margin-right: 7%;
+	margin-top: 2%;
+}
+.join .location {
+	width: 23px;
+	height: 27px;
+	display: block;
+	background: url('../img/icon.png') no-repeat;
+	background-position: -39px -2px;
+	float: left;
+	margin-right: 7%;
+	margin-top: 2%;
+}
+ul .picture {
+	display: block;
+	width: 43px;
+	height: 43px;
+	background: url('../img/icon.png');
+	margin-left: 39px;
+	margin-top: 9%;
+}
+ul .weiboPicture {
+	background-position: -3px -33px;
+}
+ul .wechatPicture{
+	background-position: -50px -32px;
+}
+ul .qqPicture {
+	background-position: -99px -33px;
+}
+.join .QRcodes {
+	width: 120px;
+	height: 120px;
+	display: block;
+	background: url('../img/QRcodes.png');
+}
+.join .weibo {
+	background-position: -5px -5px;
+}
+.join .wechat {
+	background-position: -132px -5px;
+}
+@media (max-width: 1400px) and (min-height: 850px) {
+	.knowMore img {
+		margin-top: 4%;
+    }
+    .knowMore a {
+    	line-height: 220%
+    }
+    .join ul:nth-of-type(2) li {
+		margin-top: 62%;
+	}
+}
+@media screen and (min-height: 821px) {
+    .knowMore img {
+		margin-top: 9%;
+    }
+    .knowMore a {
+    	line-height: 280%;
+    }
+    .join ul:nth-of-type(2) li {
+    	margin-top: 50%;
+    }
+}
+@media  and (max-height: 820px) {
+	.knowMore img {
+		margin-top: 6%;
+    }
+	.knowMore a {
+		line-height: 270%
+	}
+	.join ul:nth-of-type(2) li {
+		margin-top: 48%;
+	}
+}
+@media screen and (max-height: 734px) {
+	.join ul:nth-of-type(1) {
+		margin-top: 3%;
+	}
+	.join ul:nth-of-type(2) li {
+		margin-top: 46%;
+	}
+    .knowMore img {
+		margin-top: 4%;
+    }
+    .knowMore a {
+    	line-height: 220%
+    }
+}

@@ -1,0 +1,412 @@
+.productsIntroduce {
+	height: 13%;
+}
+.productsIntroduce img{
+	margin-left: 150px;
+	height: 100%;
+}
+.products {
+	width: 100%;
+	margin-top: 1.4%;
+}
+.products .leftArrow {
+	position: absolute;
+	display: block;
+	width: 19px;
+	height: 35px;
+	background: url('../img/icon.png') no-repeat;
+	margin-top: 12%;
+	margin-left: 3%;
+	background-position: -5px -79px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+.products .leftArrow:hover {
+	transform: translateX(-5px);
+	background-position: -28px -79px;
+}
+.products .rightArrow:hover {
+	background-position: -67px -81px;
+	transform: translateX(5px);
+}
+.products .rightArrow {
+	position: absolute;
+	display: block;
+	width: 19px;
+	height: 35px;
+	margin-top: 12%;
+	margin-left: 95%;
+	cursor: pointer;
+	background: url('../img/icon.png') no-repeat;
+	background-position: -95px -80px;
+	transition: transform 0.3s;
+}
+.products .productsImage { 
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.productsImage .productsImageBox {
+	width: 1000%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	transition: transform 0.5s;
+}
+.productsImage .productsSameSize {
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+.productsSameSize .homeAndYunImage {
+	margin-top: 4%;
+	width: 49%;
+	height: 100%;
+	float: left;
+}
+.productsImage .leftImgBox {
+	width: 66%;
+	height: 100%;
+	float: left;
+	margin-left: 13%;
+}
+.productsImage .rightImgBox {
+	width: 34%;
+	height: 100%;
+	float: left;
+}
+.productsImage .ncuhomePicture {
+	margin-top: 5%;
+	margin-left: 10%;
+	width: 81%;
+}
+.productsImage .homeAndYunPragraph {
+	float: left;
+	margin-left: 4%;
+	width: 46%;
+	height: 100%;
+}
+.productsSameSize h3 {
+	font-size: 28px;
+	color: #0dc5f7;
+}
+.productsSameSize h4	{ 
+ 	font-size: 20px;
+ 	color: #333333;
+ 	font-weight: 100;
+ 	margin-bottom: 25px;
+ }
+.productsSameSize .homeAndYunPragraph {
+ 	margin-top: 5%;
+ 	text-align: left;
+ }
+.productsSameSize .homeAndYunPragraph p {
+	font-size: 17px;
+	font-weight: 100;
+	line-height: 10px;
+}
+.productsSameSize .homeAndYunPragraph a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #ffffff;
+	border: 1px solid #0dc5f7;
+	color: #0dc5f7;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 30px;
+	line-height: 40px;
+	transition: background 0.2s;
+}
+.productsSameSize .homeAndYunPragraph a:hover {
+	background: #08c7fe;
+	color: #ffffff;
+}
+.productsSameSize .mincontain {
+	min-width: 690px;
+	width: 67%;
+	height: 100%;
+	margin-left: 20%;
+}
+.mincontain .productLeft {
+	height: 95%;
+	width: 40%;
+	margin-top: 2%;
+	position: relative;
+	float: left;
+}
+.mincontain .productRight {
+	float: right;
+	width: 49%;
+	height: 100%;
+	transition-delay: 0.5s;
+	transition: all 1.5s;
+}
+.mincontain .productLeft img:first-child {
+	height: 100%;
+	position: absolute;
+	margin-left: 19%;
+	box-shadow: 0 0 15px #d9dad9;
+}
+.elector .productLeft img:not(:first-child) {
+	position: absolute;
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+.elector .productLeft img:nth-child(2) {
+	margin-top: 30%;
+	height: 21%;
+	margin-left: 19%;
+}
+.elector .productLeft img:nth-child(3) {
+	margin-top: 55%;
+	margin-left: 17%;
+	height: 22.8%;
+}
+.elector .productLeft img:nth-child(4) {
+	margin-top: 80%;
+	margin-left: 18%;
+	height: 21.1%;
+}
+.elector .productLeft img:nth-child(5) {
+	margin-top: 105%;
+	margin-left: 19%;
+	height: 20.8%;
+}
+.elector .productLeft img:nth-child(6) {
+	height: 9% !important;
+	margin-top: 24%;
+	margin-left: 100%;
+	display: none;
+}
+.mincontain .productRight p {
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 10px;
+}
+.mincontain .productRight .paragraph {
+	margin-top: 8% ;
+}
+.grade .productLeft img:nth-child(2) {
+	position: absolute;
+	height: 18.3%;
+	margin-top: 38%;
+	opacity: 0.6;
+	transition: all 0.5s;
+	margin-left: 19%;
+}
+.computerRepare .productLeft img:nth-child(2) {
+	position: absolute;
+	height: 4%;
+	margin-top: 22%;
+	opacity: 0.6;
+	transition: all 0.5s;
+	margin-left: 50%;
+}
+.EnglishShow .productLeft img:nth-child(2) {
+	position: absolute;
+	height: 12.4%;
+	margin-top: 78%;
+	opacity: 0.6;
+	transition: all 0.5s;
+	margin-left: 23.5%;
+}
+.lost .productLeft img:nth-child(n+1) {
+	transition: all 0.5s;
+	position: absolute;
+}
+.lost .productLeft img:nth-child(2) {
+	height: 10%;
+	margin-top: 47%;
+	opacity: 0.6;
+	margin-left: 19%;
+}
+.lost .productLeft img:nth-child(3) {
+	height: 13%;
+	margin-top: 86%;
+	opacity: 0.6;
+	margin-left: 19%;
+}
+.productRight .QRcode {
+	margin-left: -3%;
+}
+.productLeft .flow0 {
+	transform: translate(21px,-20px) scale(1.05);
+	opacity: 1 !important;
+}
+.productLeft .flow1 {
+	transform: translate(-60px, -35px) scale(1.05);
+	opacity: 1 !important;
+}
+.productLeft .flow2 {
+	transform: translate(-132px, -35px) scale(1.05);
+	opacity: 1 !important;
+}
+.productLeft .flow3 {
+	transform: translate(40px, -35px) scale(1.05);
+	opacity: 1 !important;
+}
+.productLeft .flow4 {
+	opacity: 1 !important;
+	display: block !important;
+}
+.productLeft .flow5 {
+	transform: translate(-75px, -5px);
+	opacity: 1 !important;
+	box-shadow: 6px 10px 40px #c4c5c4; 
+}
+.productLeft .flow6 {
+	transform: translate(80px, -5px) scale(1.3);
+	opacity: 1 !important;
+}
+.productLeft .flow7 {
+	transform: translate(-90px, -5px) scale(1.1);
+	opacity: 1 !important;
+}
+.productLeft .flow8 {
+	transform: translate(-50px, -5px) scale(1.1);
+	opacity: 1 !important;
+	box-shadow: 10px 10px 10px #d5d6d5;
+}
+.productLeft .flow9 {
+	transform: translate(100px, -20px) scale(1.1);
+	opacity: 1 !important;
+	box-shadow: -10px 10px 10px #d5d6d5;
+}
+.bottomNav {
+	width: 100%;
+	height: 5%;
+}
+.bottomNav div:nth-child(n) {
+	float: right;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 50px;
+}
+.bottomNav .right12 {
+	margin-right: 12% !important;
+}
+.products .throught0 {
+	transform: translateX(0%);
+}
+.products .throught1 {
+	transform: translateX(-10%);
+}
+.products .throught2 {
+	transform: translateX(-20%);
+}
+.products .throught3 {
+	transform: translateX(-30%);
+}
+.products .throught4 {
+	transform: translateX(-40%);
+}
+.products .throught5 {
+	transform: translateX(-50%);
+}
+.products .throught6 {
+	transform: translateX(-60%);
+}
+.products .throught7 {
+	transform: translateX(-70%);
+}
+.join .qq {
+	background-position: -5px -123px;
+}
+.xiangzhang .productRight p {
+	font-size: 17px;
+}
+.xiangzhang .xiangzhangQR {
+	width: 140px;
+	height: 140px;
+	display: block;
+	background: url('../img/QRcodes.png');
+	background-position: -125px -126px;
+	margin-top: 7%;
+}
+.productRight .sameQR {
+	width: 120px;
+	height: 120px;
+	display: block;
+	background: url('../img/QRcodes.png');
+	background-position: -132px -5px;
+	transform: scale(1.23);
+	margin-top: 8%;
+	margin-left: -1.7%;
+	transform-origin: 0 0;
+}
+@media screen and (min-height: 735px) {
+    .products {
+		height: 59.2%;
+    }
+    .productsIntroduce {
+    	margin-top: 7%;
+    }
+    .productLeft .flow0 {
+    	transform: translate(21px,-20px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow1 {
+    	transform: translate(-60px, -35px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow2 {
+    	transform: translate(-132px, -35px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow3 {
+    	transform: translate(40px, -35px) scale(1.05);
+    	opacity: 1 !important;
+    }
+}
+@media screen and (max-height: 734px) {
+    .products {
+    	height: 66.2%;
+    }
+    .productsIntroduce {
+    	margin-top: 5%
+    }
+    .productLeft .flow0 {
+    	transform: translate(21px,-10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow1 {
+    	transform: translate(-60px, -10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow2 {
+    	transform: translate(-132px, -10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow3 {
+    	transform: translate(40px, -10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+}
+@media (max-width: 1400px) and (min-height: 850px) {
+	.productLeft .flow0 {
+    	transform: translate(21px,10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow1 {
+    	transform: translate(-60px, 10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow2 {
+    	transform: translate(-132px, 10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .productLeft .flow3 {
+    	transform: translate(40px, 10px) scale(1.05);
+    	opacity: 1 !important;
+    }
+    .elector .productLeft img:nth-child(6) {
+    	height: 9% !important;
+    	margin-top: 24%;
+    	margin-left: 120%;
+    	display: none;
+    }
+}
