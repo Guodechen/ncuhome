@@ -60,7 +60,7 @@
 	opacity: 0;
 	animation-name: repet;
 	animation-duration: 1.5s;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: ease-out;
 	animation-iteration-count: infinite;
 }
 .anniversary .anniversaryRight {
@@ -124,7 +124,7 @@
 		margin-top: 70%;
 	}
 	40% {
-		margin-top: 75%;
+		margin-top: 72%;
 	}100%{
 		margin-top: 70%;
 	}
@@ -134,7 +134,7 @@
 		margin-top: 70%;
 	}
 	50% {
-		margin-top: 75%;
+		margin-top: 72%;
 	}100%{
 		margin-top: 70%;
 	}

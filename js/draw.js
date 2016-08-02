@@ -1869,8 +1869,8 @@ function canvasApp10() {
         ctx.stroke();
         ctx.closePath();
         if (y1>0) {
-            y1 -= 10;
-            x1 += 10; 
+            y1 -= 5;
+            x1 += 5; 
         }
         ctx.beginPath();
         ctx.moveTo(width, height/2-180);
@@ -1878,8 +1878,8 @@ function canvasApp10() {
         ctx.stroke();
         ctx.closePath();
         if (y2<height-180) {
-            y2 += 10;
-            x2 -= 10; 
+            y2 += 5;
+            x2 -= 5; 
         }
         if (y1 > 0) {
             window.requestAnimationFrame(draw);

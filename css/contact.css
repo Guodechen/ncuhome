@@ -130,7 +130,7 @@
 	height: 35%;
 	list-style: none;
 	margin: 0 auto;
-	margin-top: 35%;
+	margin-top: 30%;
 	margin-left: 5%;
 }
 .join ul:nth-of-type(2) li {
@@ -198,6 +198,9 @@ ul .qqPicture {
 }
 .join .wechat {
 	background-position: -132px -5px;
+}
+.join .qq {
+	background-position: -5px -123px;
 }
 @media (max-width: 1400px) and (min-height: 850px) {
 	.knowMore img {
