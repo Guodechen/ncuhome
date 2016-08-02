@@ -424,19 +424,19 @@ function canvasApp04() {
         
         if (y1>200) {
             if (x1 < 52) {
-                a = 2- ( x1 /26)　
+                a = 2- ( x1 /36)　
                 x1 = x1 + a
             }
             if (x2 < 52 && x1 > 15) {
-                a = 2- ( x2 /26)　
+                a = 2- ( x2 /36)　
                 x2 = x2 + a
             }
             if (x3 < 52 && x2 > 15) {
-                a = 2- ( x3 /26)　
+                a = 2- ( x3 /36)　
                 x3 = x3 + a
             }
             if (x4 < 52 && x3 > 15) {
-                a = 2- ( x4 /26)　
+                a = 2- ( x4 /36)　
                 x4 = x4 + a
             }
         
@@ -461,13 +461,13 @@ function canvasApp04() {
             ctx.lineTo(0, y1);
             ctx.stroke();
             if (y1 < 260) {
-                y1 = y1 + 1.5;
+                y1 = y1 + 2;
             }
             ctx.moveTo(130, 390);
             ctx.lineTo(130, y2);
             ctx.stroke();
             if (y2 > 180) {
-                y2 = y2 - 1.5;
+                y2 = y2 - 2;
             }
             ctx.closePath()
         }
@@ -677,7 +677,7 @@ function canvasApp05() {
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "霸道总裁是我的代名词"
-                message02 = "Microsoft office是我的武器"
+                message02 = "Microsoft Office 是我的武器"
                 message03 = "每天机房总能见到我忙碌的身影"
                 message04 = "不标红你是我对你最大的温柔"
                 ctx.beginPath()
@@ -873,7 +873,7 @@ function canvasApp05() {
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "十项全能是为我量身打造"
-                message02 = "做的了Axure产品原型"
+                message02 = "做的了 Axure 产品原型"
                 message03 = "推文运营更不在话下"
                 message04 = "在忙碌中体会出新的人生意义"
                 ctx.beginPath()
@@ -1069,8 +1069,8 @@ function canvasApp05() {
                 ctx.lineJoin = 'bevel';
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
-                message01 = "用PS彩绘生活"
-                message02 = "用AE、PR创意人生"
+                message01 = "用 PS 彩绘生活"
+                message02 = "用 AE、PR 创意人生"
                 message03 = "世界在我手里"
                 message04 = "怎样都是最美的姿态"
                 ctx.beginPath()
@@ -1270,7 +1270,7 @@ function canvasApp05() {
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "简单的符号组成代码"
                 message02 = "用键盘敲击出扣人心弦的响声"
-                message03 = "以sublime为剑"
+                message03 = "以 Sublime 为剑"
                 message04 = "诉说我的青春态度"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
