@@ -1,5 +1,4 @@
 	var ifcanvasClose = true
-	TeamBtn()
 function TeamBtn() {
 	var span = document.getElementsByClassName('changeBtnBox')[0].getElementsByTagName('span')
 	var team = document.getElementsByClassName('team')[0]
@@ -12,7 +11,17 @@ function TeamBtn() {
 	var teamName = document.getElementsByClassName('teamName')
 	var canvasClass = document.getElementById('teamCanvas')
 
-	span[0].onclick = function () {
+
+	if (opts.load == 3) {
+		prev()
+	}
+	if (opts.load == 4) {
+		next()
+	}
+
+
+	span[0].onclick = prev
+	function prev() {
 		if (span[0].classList.length) {
 			return
 		}else {
@@ -21,7 +30,8 @@ function TeamBtn() {
 			team.classList.remove('slide')
 		}
 	}
-	span[1].onclick = function () {
+	span[1].onclick = next
+	function next() {
 		if (span[1].classList.length) {
 			return
 		}

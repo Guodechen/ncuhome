@@ -14,7 +14,7 @@
 	display: block;
 	width: 19px;
 	height: 35px;
-	background: url('../img/icon.png') no-repeat;
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_icon.png') no-repeat;
 	margin-top: 12%;
 	margin-left: 3%;
 	background-position: -5px -79px;
@@ -37,7 +37,7 @@
 	margin-top: 12%;
 	margin-left: 95%;
 	cursor: pointer;
-	background: url('../img/icon.png') no-repeat;
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_icon.png') no-repeat;
 	background-position: -95px -80px;
 	transition: transform 0.3s;
 }
@@ -313,6 +313,12 @@
 .products .throught7 {
 	transform: translateX(-70%);
 }
+.products .throught8 {
+	transform: translateX(-80%);
+}
+.products .throught9 {
+	transform: translateX(-90%);
+}
 .xiangzhang .productRight p {
 	font-size: 17px;
 }
@@ -320,7 +326,7 @@
 	width: 140px;
 	height: 140px;
 	display: block;
-	background: url('../img/QRcodes.png');
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_QRcodes.png');
 	background-position: -125px -126px;
 	margin-top: 7%;
 }
@@ -328,7 +334,7 @@
 	width: 120px;
 	height: 120px;
 	display: block;
-	background: url('../img/QRcodes.png');
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_QRcodes.png');
 	background-position: -132px -5px;
 	transform: scale(1.23);
 	margin-top: 8%;

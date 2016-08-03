@@ -32,7 +32,7 @@ body,html {
 }
 .imagebox .images p {
 	opacity: 1;
-	font-size: 40px;
+	font-size: 25px;
 	color: #333333;
 	transition: all 0.5s;
 }
@@ -50,9 +50,9 @@ body,html {
 }
 .imagebox .images h3 {
 	opacity: 0;
-	font-size: 50px;
+	font-size: 45px;
 	color: #333333;
-	font-weight: 600;
+	font-weight: 400;
 	transform: translateY(50%);
 	transition-delay: 0.1s;
 	transition: all 0.5s;
@@ -81,31 +81,92 @@ body,html {
 	-o-transform: translate(0, -100%);
 }
 .translate2 {
+	transition-delay:0.3s;
+	transform: translate(0, -100%);
+	-webkit-transform: translate(0, -100%);
+	-moz-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+}
+.translate3 {
 	transform: translate(0, -200%);
 	-webkit-transform: translate(0, -200%);
 	-moz-transform: translate(0, -200%);
 	-o-transform: translate(0, -200%);
 }
-.translate3 {
+.translate4 {
+	transform: translate(0, -200%);
+	-webkit-transform: translate(0, -200%);
+	-moz-transform: translate(0, -200%);
+	-o-transform: translate(0, -200%);
+}
+.translate5 {
 	transform: translate(0, -300%);
 	-webkit-transform: translate(0, -300%);
 	-moz-transform: translate(0, -300%);
 	-o-transform: translate(0, -300%);
 }
-.translate4 {
+.translate6 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate7 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate8 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate9 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate10 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate11 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate12 {
+	transform: translate(0, -300%);
+	-webkit-transform: translate(0, -300%);
+	-moz-transform: translate(0, -300%);
+	-o-transform: translate(0, -300%);
+}
+.translate13 {
 	transform: translate(0, -400%);
 	-webkit-transform: translate(0, -400%);
 	-moz-transform: translate(0, -400%);
 	-o-transform: translate(0, -400%);
 }
-.translate5 {
+.translate14 {
+	transform: translate(0, -500%);
+	-webkit-transform: translate(0, -500%);
+	-moz-transform: translate(0, -500%);
+	-o-transform: translate(0, -500%);
+}
+.translate15 {
 	transform: translate(0, -500%);
 	-webkit-transform: translate(0, -500%);
 	-moz-transform: translate(0, -500%);
 	-o-transform: translate(0, -500%);
 }
 #index {
-	background: url(../img/index/background.png) no-repeat center;
+	background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_background.png) no-repeat center;
 	background-size: cover;
 }
 .navgation {
@@ -148,7 +209,7 @@ body,html {
 	height: 30px;
     float: right;
     width: 32px;
-    background: url(../img/index/beforeicon.png) no-repeat;
+    background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_beforeicon.png) no-repeat;
     cursor: pointer;
     margin-right: 78px;
     margin-top: 50px;
@@ -169,7 +230,7 @@ body,html {
 	-moz-transform-origin: 50% 60%;
 	-o-transform: rotate(360deg);
 	-o-transform-origin: 50% 60%;
-	background: url(../img/index/aftericon.png) no-repeat;
+	background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 }
 .navgation .icon:hover{
 	transform: rotate(360deg);
@@ -180,7 +241,7 @@ body,html {
 	-moz-transform-origin: 40% 35%;
 	-o-transform: rotate(360deg);
 	-o-transform-origin: 40% 35%;
-	background: url(../img/index/aftericon.png) no-repeat;
+	background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 }
 .navgation ul:hover .icon {
 	transform: rotate(360deg);
@@ -191,7 +252,7 @@ body,html {
 	-moz-transform-origin: 40% 35%;
 	-o-transform: rotate(360deg);
 	-o-transform-origin: 40% 35%;
-	background: url(../img/index/aftericon.png) no-repeat;
+	background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 }
 .navgation .icon:hover + ul {
 	width: 820px;
@@ -278,38 +339,38 @@ body,html {
 	0%, 80%{
 		transform: rotate(360deg);
 		transform-origin: 50% 55%;
-		background: url(../img/index/aftericon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 	}
 	100%{
-		background: url(../img/index/beforeicon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_beforeicon.png) no-repeat;
 	}
 }
 @-webkit-keyframes spin {
 	0%, 80%{
 		transform: rotate(360deg);
 		transform-origin: 50% 55%;
-		background: url(../img/index/aftericon.png) no-repeat;}
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;}
 	100%{
-		background: url(../img/index/beforeicon.png) no-repeat;}
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_beforeicon.png) no-repeat;}
 }
 @-moz-keyframes spin {
 	0%, 80%{
 		transform: rotate(360deg);
 		transform-origin: 50% 55%;
-		background: url(../img/index/aftericon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 	}
 	100%{
-		background: url(../img/index/beforeicon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_beforeicon.png) no-repeat;
 	}
 }
 @-o-keyframes spin {
 	0%, 80%{
 		transform: rotate(360deg);
 		transform-origin: 50% 55%;
-		background: url(../img/index/aftericon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_aftericon.png) no-repeat;
 	}
 	100%{
-		background: url(../img/index/beforeicon.png) no-repeat;
+		background: url(http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_beforeicon.png) no-repeat;
 	}
 }
 @keyframes scalemouse {

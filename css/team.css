@@ -127,7 +127,7 @@
 	cursor: pointer;
 	display: block;
 	margin: 0 auto 30px auto;
-	background: url('../img/icon.png') no-repeat;
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_icon.png') no-repeat;
 }
 .teamBox .officeIcon { 
 	width: 38px;
@@ -180,7 +180,7 @@
 	width: 15px;
 	height: 15px;
 	cursor: pointer;
-	background: url('../img/icon.png');
+	background: url('http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_icon.png');
 	background-position: -105px -6px; 
 	display: none;
 }

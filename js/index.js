@@ -12,12 +12,12 @@ var rotate = function() {
     }
 }
 rotate()
-
 var opts = {
     load: 0,
     timer: 600,
     through: true,
-    maxPictures: 5
+    maxPictures: 15,
+    flag:1
 }
 var head = document.getElementById('head')
 if (head.getAttribute('class') === "container transition translate1") {
@@ -28,21 +28,42 @@ var scrollFun = function(e) {
     if (opts.through && e.wheelDelta || e.detail) {
         if (e.wheelDelta < 0 || e.detail > 0) {
             scrollWheel("down")
+            opts.flag = 1
             setTimeout(waiting, opts.timer)
         }
         if (e.wheelDelta > 0 || e.detail < 0) {
             scrollWheel("up")
+            opts.flag = 0
             setTimeout(waiting, opts.timer)
         }
-        if (opts.load == 4) {
-            gather()
-        } else if (opts.load !== 4) {
-            clearGather()
-        }
-        if (opts.load == 1) {
-            setTimeout(clickChange, 1000)
-        } else if (opts.load != 1) {
-            stop()
+        switch(opts.load){
+            case 1:
+            case 2:
+                clickChange()
+                clearGather()
+                break
+            case 3:
+            case 4:
+                clearGather()
+                TeamBtn()
+                break
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+                Product()
+                clearGather()
+                break
+            case 13:
+                gather()
+                break
+            case 14:
+            case 15:
+                contact()
+                break
         }
     }
     var head = document.getElementById('head')
@@ -210,14 +231,14 @@ function navClick() {
         canvasApp02Clear('li6', 'licanvas06')
     }
     li2.onclick = function() {
-        if (opts.load == 2) {
+        if (opts.load == 3) {
             return
         } else {
-            if (opts > 2) {
-                opts.load = 2
+            if (opts > 3) {
+                opts.load = 3
                 Location('up')
             } else {
-                opts.load = 2
+                opts.load = 3
                 Location('down')
             }
         }
@@ -236,14 +257,14 @@ function navClick() {
         canvasApp02Clear('li6', 'licanvas06')
     }
     li3.onclick = function() {
-        if (opts.load == 3) {
+        if (opts.load == 5) {
             return
         } else {
-            if (opts > 3) {
-                opts.load = 3
+            if (opts > 5) {
+                opts.load = 5
                 Location('up')
             } else {
-                opts.load = 3
+                opts.load = 5
                 Location('down')
             }
         }
@@ -263,14 +284,14 @@ function navClick() {
         canvasApp02Clear('li6', 'licanvas06')
     }
     li4.onclick = function() {
-        if (opts.load == 4) {
+        if (opts.load == 13) {
             return
         } else {
-            if (opts > 4) {
-                opts.load = 4
+            if (opts > 13) {
+                opts.load = 13
                 Location('up')
             } else {
-                opts.load = 4
+                opts.load = 13
                 Location('down')
             }
         }
@@ -292,10 +313,10 @@ function navClick() {
         canvasApp02Clear('li6', 'licanvas06')
     }
     li5.onclick = function() {
-        if (opts.load == 5) {
+        if (opts.load == 14) {
             return
         } else {
-            opts.load = 5
+            opts.load = 14
             Location('up')
         }
         canvasApp12();
@@ -366,21 +387,42 @@ window.onmousewheel = scrollFun
 document.onkeydown = function(e) {
     if (e.keyCode == 38 && opts.through) {
         scrollWheel("up")
+        opts.flag = 0
         setTimeout(waiting, opts.timer)
     }
     if (opts.through && e.keyCode == 40) {
         scrollWheel("down")
+        opts.flag = 1
         setTimeout(waiting, opts.timer)
     }
-    if (opts.load == 4) {
-        gather()
-    } else if (opts.load !== 4) {
-        clearGather()
-    }
-    if (opts.load == 1) {
-        setTimeout(clickChange, 1000)
-    } else if (opts.load != 1) {
-        stop()
+    switch(opts.load){
+        case 1:
+        case 2:
+            clickChange()
+            clearGather()
+            break
+        case 3:
+        case 4:
+            clearGather()
+            TeamBtn()
+            break
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+            Product()
+            clearGather()
+            break
+        case 13:
+            gather()
+            break
+        case 14:
+        case 15:
+            contact()
+            break
     }
     var head = document.getElementById('head')
     if (head.getAttribute('class') === "container transition translate0"&&　(e.keyCode == 38 || e.keyCode == 40)) {

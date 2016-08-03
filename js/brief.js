@@ -1,8 +1,3 @@
-
-var timeRotate;		
-function stop() {
-	clearInterval(timeRotate)
-}
 var clickChange = function () {
 	var leftBoxChild = document.getElementById("leftBox").getElementsByTagName("div")
 	var boxChild = document.getElementById("leftBox").getElementsByClassName('Zindex')
@@ -83,7 +78,6 @@ var clickChange = function () {
 
 			img[i].onmouseover = function () {
 				var order = parseInt(this.getAttribute('order'))
-				stop()
 				switch (order)
 				{
 					case 0: 
@@ -107,7 +101,6 @@ var clickChange = function () {
 				}
 				this.onmouseout = function () {
 					img[order].classList.remove('largen')
-					play()
 					switch(order){
 						case 0: 
 						img[0].classList.remove('largen')
@@ -133,23 +126,15 @@ var clickChange = function () {
 		}
 	}
 	pictureHover()
-	function play() {
-		var span = document.getElementsByTagName('span')
-		timeRotate = setInterval(function () {
-			if (span[3].classList.length) {
-				next()
-			} else{
-				prev()
-			}
-		},5000)
-	}
 	span[3].onclick = prev
 	span[4].onclick = next
-	span[3].onmouseover = stop
-	span[4].onmouseover = stop
-	span[3].onmouseout = play
-	span[4].onmouseout = play
 
+	if (opts.load == 1) {
+		prev()	
+	}
+	if (opts.load == 2) {
+		next()
+	}
 	function clearDisprese() {
 		if (disprese0.classList.length == 2) {
 			disprese0.classList.remove("disperse0")
@@ -159,6 +144,7 @@ var clickChange = function () {
 			return
 		}
 	}
-	clearDisprese()
-	play()
+	setTimeout(function () {
+		clearDisprese()
+	},1000)
 }

@@ -2,7 +2,8 @@ function contact() {
 	var btn = document.getElementsByClassName('switchBtn')
 	var boxContain = document.getElementsByClassName('containContact')[0]
 
-	btn[0].onclick = function () {
+	btn[0].onclick = prev
+	function prev() {
 		if (btn[0].classList.lenght == 2) {
 			return
 		}else {
@@ -12,11 +13,17 @@ function contact() {
 			boxContain.classList.remove('flowUp')
 		}
 	}
-	btn[1].onclick = function () {
+	btn[1].onclick = next
+	function next() {
 		btn[0].classList.remove('afterClick')
 		btn[1].classList.add('afterClick')
 
 		boxContain.classList.add('flowUp')
 	}
+	if (opts.load == 14) {
+		prev()
+	}
+	if (opts.load == 15) {
+		next()
+	}
 }
-contact()

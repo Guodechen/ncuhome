@@ -10,7 +10,6 @@ Debugger.log = function(message)  {
        return;
     }
 }
-
 function eventWindowLoaded(){
     canvasApp01('首页', 'li1', 'licanvas01');
     canvasApp01('简介', 'li2', 'licanvas02');
@@ -314,7 +313,7 @@ function canvasApp03() {
             // a = textX2 / 40
         }
         var  image01 = new Image();
-        image01.src = "./img/brief/01.png";
+        image01.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_01.png";
         
         ctx.fillText(message01, -70 + textX, 110)
         ctx.font = "normal normal 28px 微软雅黑"
@@ -414,10 +413,10 @@ function canvasApp04() {
         }
         ctx.beginPath()
         var  image01 = new Image();
-        image01.src = "./img/team/0.png";
+        image01.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_0.png";
         ctx.drawImage(image01, 5, vy1 - 120 , 68, 79)
         var  image02 = new Image();
-        image02.src = "./img/team/2.png";
+        image02.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_2.png";
         ctx.drawImage(image02, 85, vy2 - 120 , 45, 79)
         ctx.closePath()
 
@@ -1581,6 +1580,7 @@ function canvasApp05() {
         }
     }
 }
+// png
 function canvasApp06() {
     if (!canvasSupport()){
         return;
@@ -1632,7 +1632,7 @@ function canvasApp06() {
             textX2 = textX2 + a 
         }
         var  image01 = new Image();
-        image01.src = "./img/products/03.png";
+        image01.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_03.png";
         ctx.fillText(message01, -70 + textX, 70)
         ctx.font = "normal normal 28px 微软雅黑"
         ctx.fillText(message02, 600 - textX1, 120)
@@ -1782,7 +1782,6 @@ function canvasApp07back(id,id2) {
     if (id === 'productsCanvas03') {drawLine2()} 
     if (id === 'productsCanvas02' || id === 'productsCanvas04' ) {drawLine()}
     function drawLine1() {
-        console.log(ifcanvasApp07back)
         canvas = document.getElementById(id);
         canvas.width = width;
         canvas.height = height;
@@ -2005,10 +2004,10 @@ function canvasApp11() {
         }
         ctx.beginPath()
         var  image01 = new Image();
-        image01.src = "./img/team/0.png";
+        image01.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_0.png";
         ctx.drawImage(image01, 5, vy1 - 120 , 68, 79)
         var  image02 = new Image();
-        image02.src = "./img/anniversary/4.png";
+        image02.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_4.png";
         ctx.drawImage(image02, 85, vy2 - 120 , 45, 79)
         ctx.closePath()
 
@@ -2214,10 +2213,10 @@ function canvasApp12() {
         }
         ctx.beginPath()
         var  image01 = new Image();
-        image01.src = "./img/team/0.png";
+        image01.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_0.png";
         ctx.drawImage(image01, 5, vy1 - 120 , 68, 79)
         var  image02 = new Image();
-        image02.src = "./img/contact/5.png";
+        image02.src = "http://7xu5y0.com1.z0.glb.clouddn.com/2016ncuhome_5.png";
         ctx.drawImage(image02, 85, vy2 - 120 , 45, 79)
         ctx.closePath()
 
