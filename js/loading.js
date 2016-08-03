@@ -56,7 +56,7 @@ function loadImages(sources){
             ctx.lineCap = 'round';
             ctx.strokeStyle='#95a7f6';
             ctx.moveTo(220,200);
-            ctx.lineTo(loadedImages/(numImages-1)*700,200);  
+            ctx.lineTo(loadedImages/(numImages-1)*480 + 220,200);  
             ctx.stroke();
             ctx.closePath();
             //当所有图片加载完成时，执行回调函数callback   
