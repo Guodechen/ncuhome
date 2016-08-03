@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     upper()
     eventWindowLoaded()
 }
@@ -424,19 +424,19 @@ function canvasApp04() {
         
         if (y1>200) {
             if (x1 < 52) {
-                a = 2- ( x1 /36)　
+                a = 2- ( x1 /26)　
                 x1 = x1 + a
             }
             if (x2 < 52 && x1 > 15) {
-                a = 2- ( x2 /36)　
+                a = 2- ( x2 /26)　
                 x2 = x2 + a
             }
             if (x3 < 52 && x2 > 15) {
-                a = 2- ( x3 /36)　
+                a = 2- ( x3 /26)　
                 x3 = x3 + a
             }
             if (x4 < 52 && x3 > 15) {
-                a = 2- ( x4 /36)　
+                a = 2- ( x4 /26)　
                 x4 = x4 + a
             }
         
@@ -484,31 +484,31 @@ function canvasApp04() {
         ctx.fillText(message11, 326, -142 + x11)
         if (y1>200) {
             if (x5 < 42) {
-                a = 2- ( x5 /26)　
+                a = 2- ( x5 /36)　
                 x5 = x5 + a
             }
             if (x6 < 42 && x5 > 15) {
-                a = 2- ( x6 /26)　
+                a = 2- ( x6 /36)　
                 x6 = x6 + a
             }
             if (x7 < 42 && x6 > 15) {
-                a = 2- ( x7 /26)　
+                a = 2- ( x7 /36)　
                 x7 = x7 + a
             }
             if (x8 < 42 && x7 > 15) {
-                a = 2- ( x8 /26)　
+                a = 2- ( x8 /36)　
                 x8 = x8 + a
             }
             if (x9 < 42 && x8 > 15) {
-                a = 2- ( x9 /26)　
+                a = 2- ( x9 /36)　
                 x9 = x9 + a
             }
             if (x10 < 42 && x9 > 15) {
-                a = 2- ( x10 /26)　
+                a = 2- ( x10 /36)　
                 x10 = x10 + a
             }
             if (x11 < 42 && x10 > 15) {
-                a = 2- ( x11 /26)　
+                a = 2- ( x11 /36)　
                 x11 = x11 + a
             }
         }
@@ -677,9 +677,10 @@ function canvasApp05() {
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "霸道总裁是我的代名词"
-                message02 = "Microsoft Office 是我的武器"
+                message02 = "Microsoft office是我的武器"
                 message03 = "每天机房总能见到我忙碌的身影"
                 message04 = "不标红你是我对你最大的温柔"
+                message05 = "办公室"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
                 ctx.font = "normal normal 18px 微软雅黑"
@@ -704,6 +705,9 @@ function canvasApp05() {
                     textX3 = textX3 + a
                 }
                 ctx.fillText(message01, -200 + textX, 182)
+                ctx.font = "normal normal 30px 微软雅黑"
+                ctx.fillText(message05, -120 + textX, 85)
+                ctx.font = "normal normal 18px 微软雅黑"
                 ctx.fillText(message02, -225 + textX1, 203)
                 ctx.fillText(message03, -252 + textX2, 224)
                 ctx.fillText(message04, -235 + textX3, 245)
@@ -873,9 +877,10 @@ function canvasApp05() {
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "十项全能是为我量身打造"
-                message02 = "做的了 Axure 产品原型"
+                message02 = "做的了Axure产品原型"
                 message03 = "推文运营更不在话下"
                 message04 = "在忙碌中体会出新的人生意义"
+                message05 = "运营部"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
                 ctx.font = "normal normal 18px 微软雅黑"
@@ -900,6 +905,9 @@ function canvasApp05() {
                     textX3 = textX3 + a
                 }
                 ctx.fillText(message01, 970 - textX, 138)
+                ctx.font = "normal normal 30px 微软雅黑"
+                ctx.fillText(message05, 980 - textX, 70)
+                ctx.font = "normal normal 18px 微软雅黑"
                 ctx.fillText(message02, 970 - textX1, 162)
                 ctx.fillText(message03, 970 - textX2, 185)
                 ctx.fillText(message04, 970 - textX3, 208)
@@ -1069,10 +1077,11 @@ function canvasApp05() {
                 ctx.lineJoin = 'bevel';
                 ctx.lineCap = 'square';
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
-                message01 = "用 PS 彩绘生活"
-                message02 = "用 AE、PR 创意人生"
+                message01 = "用PS彩绘生活"
+                message02 = "用AE、PR创意人生"
                 message03 = "世界在我手里"
                 message04 = "怎样都是最美的姿态"
+                message05 = "设计部"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
                 ctx.font = "normal normal 18px 微软雅黑"
@@ -1097,6 +1106,9 @@ function canvasApp05() {
                     textX3 = textX3 + a
                 }
                 ctx.fillText(message01, 970 - textX, 108)
+                ctx.font = "normal normal 30px 微软雅黑"
+                ctx.fillText(message05, 970 - textX, 235)
+                ctx.font = "normal normal 18px 微软雅黑"
                 ctx.fillText(message02, 970 - textX1, 132)
                 ctx.fillText(message03, 970 - textX2, 155)
                 ctx.fillText(message04, 970 - textX3, 178)
@@ -1270,8 +1282,9 @@ function canvasApp05() {
                 ctx.clearRect(0, 0, canvasTow.width, canvasTow.height);
                 message01 = "简单的符号组成代码"
                 message02 = "用键盘敲击出扣人心弦的响声"
-                message03 = "以 Sublime 为剑"
+                message03 = "以sublime为剑"
                 message04 = "诉说我的青春态度"
+                message05 = "开发部"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
                 ctx.font = "normal normal 18px 微软雅黑"
@@ -1296,6 +1309,9 @@ function canvasApp05() {
                     textX3 = textX3 + a
                 }
                 ctx.fillText(message01, 970 - textX, 138)
+                ctx.font = "normal normal 30px 微软雅黑"
+                ctx.fillText(message05, 1020 - textX, 263)
+                ctx.font = "normal normal 18px 微软雅黑"
                 ctx.fillText(message02, 970 - textX1, 162)
                 ctx.fillText(message03, 970 - textX2, 185)
                 ctx.fillText(message04, 970 - textX3, 208)
@@ -1477,6 +1493,7 @@ function canvasApp05() {
                 message02 = "不尽的崩溃系统伴我成长"
                 message03 = "您满意的笑容"
                 message04 = "是我奋斗的目标"
+                message05 = "应维部"
                 ctx.beginPath()
                 ctx.fillStyle = "#333333"
                 ctx.font = "normal normal 18px 微软雅黑"
@@ -1501,6 +1518,9 @@ function canvasApp05() {
                     textX3 = textX3 + a
                 }
                 ctx.fillText(message01, -200 + textX, 112)
+                ctx.font = "normal normal 30px 微软雅黑"
+                ctx.fillText(message05, -130 + textX, 255)
+                ctx.font = "normal normal 18px 微软雅黑"
                 ctx.fillText(message02, -200 + textX1, 133)
                 ctx.fillText(message03, -200 + textX2, 154)
                 ctx.fillText(message04, -200 + textX3, 175)
@@ -1869,8 +1889,8 @@ function canvasApp10() {
         ctx.stroke();
         ctx.closePath();
         if (y1>0) {
-            y1 -= 5;
-            x1 += 5; 
+            y1 -= 10;
+            x1 += 10; 
         }
         ctx.beginPath();
         ctx.moveTo(width, height/2-180);
@@ -1878,8 +1898,8 @@ function canvasApp10() {
         ctx.stroke();
         ctx.closePath();
         if (y2<height-180) {
-            y2 += 5;
-            x2 -= 5; 
+            y2 += 10;
+            x2 -= 10; 
         }
         if (y1 > 0) {
             window.requestAnimationFrame(draw);

@@ -67,7 +67,10 @@ function Product() {
 
 	left.onclick = function () {
 		if (position == 0) {
-			position=0
+			// position=0
+			return
+			// document.getElementsByClassName('productsImageBox')[0].style.transitionDuration='0s'
+			// productArrow(position)
 		} else {
 			position++ 
 			productArrow(position)
@@ -75,7 +78,12 @@ function Product() {
 	}
 	right.onclick = function () {
 		if (position == -maxWidth) {
-			position = -maxWidth
+			return
+			// position = 0
+			// console.log(box.style)
+			// box.style.transitionDuration = '0s'
+			// productArrow(position)
+
 		} else {
 			position--
 			productArrow(position)

@@ -2,7 +2,7 @@ function loadImages(sources){
     var smokeCanvas = document.getElementById('smokeCanvas'),
     ctx = smokeCanvas.getContext('2d'),
     cw = smokeCanvas.width = 1000,
-    ch = smokeCanvas.height = 300,
+    ch = smokeCanvas.height = 400,
     smoke = document.getElementById('smokeDiv');
     var sw,st,marginLeft,marginTop,images,opa;
     sw = smoke.offsetWidth;
@@ -15,8 +15,11 @@ function loadImages(sources){
     ctx.globalAlpha = 1;   
     var loadedImages = 0;    
     var numImages = 0;  
-    ctx.font='14px bold';
+    ctx.font='normal bold 14px 微软雅黑';
+    ctx.textBaseline = 'middle';
+    ctx.textAlign = 'center';
     ctx.lineWidth=5;
+    ctx.lineCap = 'round';
     opa = 1
     var clearWidth=smokeCanvas.width;
     var clearHeight=smokeCanvas.height;
@@ -34,23 +37,30 @@ function loadImages(sources){
         images.onload = function(){ 
             //重绘一个进度条
             ctx.clearRect(0,0,clearWidth,clearHeight);
-            ctx.fillText('Loading:'+Math.round(loadedImages / (numImages-1) * 10000) / 100.00 + "%",200,280);
-            Math.round(loadedImages / (numImages-1) * 10000) / 100.00 + "%"
-            // ctx.fillText('Loading:'+loadedImages/(numImages-1),200,280);
+            
+            ctx.beginPath()
+            ctx.fillStyle='#95a7f6';
+            ctx.fillText(Math.round(loadedImages / (numImages-1) * 10000) / 100.00 + "%",740,200);
+            ctx.closePath()
             ctx.save();
-            ctx.strokeStyle='#555';
+            ctx.strokeStyle='#dadada';
             ctx.beginPath();
-            ctx.moveTo(200,300);
-            ctx.lineTo(600,300);
+            ctx.moveTo(220,200);
+            ctx.lineTo(700,200);
             ctx.stroke();
+            ctx.closePath();
+
+            ctx.lineWidth=3;
             ctx.beginPath();
             ctx.restore();
-            ctx.moveTo(200,300);
-            ctx.lineTo(loadedImages/numImages*400+200,300);  
+            ctx.lineCap = 'round';
+            ctx.strokeStyle='#95a7f6';
+            ctx.moveTo(220,200);
+            ctx.lineTo(loadedImages/(numImages-1)*700,200);  
             ctx.stroke();
-            //当所有图片加载完成时，执行回调函数callback
+            ctx.closePath();
+            //当所有图片加载完成时，执行回调函数callback   
             if (++loadedImages >= numImages) {    
-                if (++loadedImages >= numImages) {    
                 // smoke.style.opacity = opa; 
                 downLoda()
                 function downLoda() {
@@ -63,12 +73,16 @@ function loadImages(sources){
                         smoke.style.display = "none";
                     }
                     }   
-            }    
-            }    
+            }   
+
         };  
+        //把sources中的图片信息导入images数组  
             
     }    
-}     
+}    
+// console.log("a")
+//定义预加载图片数组对象，执行loading模块
+// window.onload = function(){    
     
     var sources =    {
         PaperBoy1: "./img/anniversary/4.png",    
@@ -105,26 +119,26 @@ function loadImages(sources){
         PaperBoy32: "../img/products/issueReport.png" ,
         PaperBoy33: "../img/products/lostThingShow.png" ,
         PaperBoy34: "../img/products/monthElector.png" ,
-        PaperBoy35: "../img/products/ncuhome.gif" ,
-        PaperBoy36: "../img/products/record.png" ,
-        PaperBoy37: "../img/products/recordRequest.png" ,
-        PaperBoy38: "../img/products/resldueDays.png" ,
-        PaperBoy39: "../img/products/xiangzhang.png" ,
-        PaperBoy40: "../img/products/yunhome.png" ,
-        PaperBoy41: "../img/team/0.png" ,
-        PaperBoy42: "../img/team/2.png" ,
-        PaperBoy43: "../img/team/bgs+mb.png" ,
-        PaperBoy44: "../img/team/bgs.png" ,
-        PaperBoy45: "../img/team/kf+mb.png" ,
-        PaperBoy46: "../img/team/kf.png" ,
-        PaperBoy47: "../img/team/sj+mb.png" ,
-        PaperBoy48: "../img/team/sj.png" ,
-        PaperBoy49: "../img/team/x.png" ,
-        PaperBoy50: "../img/team/yw+mb.png" ,
-        PaperBoy51: "../img/team/yy+mb.png" ,
-        PaperBoy52: "../img/team/yy.png" ,
+        PaperBoy35: "../img/products/record.png" ,
+        PaperBoy36: "../img/products/recordRequest.png" ,
+        PaperBoy37: "../img/products/resldueDays.png" ,
+        PaperBoy38: "../img/products/xiangzhang.png" ,
+        PaperBoy39: "../img/products/yunhome.png" ,
+        PaperBoy40: "../img/team/0.png" ,
+        PaperBoy41: "../img/team/2.png" ,
+        PaperBoy42: "../img/team/bgs+mb.png" ,
+        PaperBoy43: "../img/team/bgs.png" ,
+        PaperBoy44: "../img/team/kf+mb.png" ,
+        PaperBoy45: "../img/team/kf.png" ,
+        PaperBoy46: "../img/team/sj+mb.png" ,
+        PaperBoy47: "../img/team/sj.png" ,
+        PaperBoy48: "../img/team/x.png" ,
+        PaperBoy49: "../img/team/yw+mb.png" ,
+        PaperBoy50: "../img/team/yy+mb.png" ,
+        PaperBoy51: "../img/team/yy.png" ,
 
           }  
     //执行图片预加载，加载完成后执行main
     // console.log(sources[src])
     loadImages(sources);  
+     

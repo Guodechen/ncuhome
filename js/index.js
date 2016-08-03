@@ -248,7 +248,7 @@ function navClick() {
             }
         }
         canvasApp06();
-        canvasApp07('productsCanvas04','bottomNavLine2')
+        canvasApp07('productsCanvas05','bottomNavLine3')
         canvasApp02('产品介绍', 'li4', 'licanvas04', 'container transition translate3');
         canvasApp01('首页', 'li1', 'licanvas01');
         canvasApp01('简介', 'li2', 'licanvas02');
